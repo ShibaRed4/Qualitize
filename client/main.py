@@ -3,7 +3,7 @@ import camera
 import network
 import uwebsockets.client
 import time
-from utils.env import load_env
+from env import load_env
 
 
 # Setup Wifi
