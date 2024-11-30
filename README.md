@@ -5,7 +5,7 @@
 
 <!-- Badges Section -->
 <p align="center">
-  ![Python](https://img.shields.io/badge/Python-3.9+-blue)
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
   ![AI](https://img.shields.io/badge/AI-Enabled-green)
 </p>
 
