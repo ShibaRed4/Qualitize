@@ -1,6 +1,6 @@
 <!-- Banner Section (Insert your banner image URL here) -->
 <p align="center">
-  <img src="your-banner-image-url-here" alt="Qualitize Banner" />
+  <img src="https://github.com/ShibaRed4/Qualitize/blob/main/.github/icon.png" alt="Qualitize Banner" />
 </p>
 
 <!-- Badges Section -->
