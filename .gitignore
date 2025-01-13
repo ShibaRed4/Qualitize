@@ -173,3 +173,9 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+
+
+# Custom
+
+./backend/piper/en_US-amy-low.onnx
+./backend/piper/en_US-amy-low.onnx.json
