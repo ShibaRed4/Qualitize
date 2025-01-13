@@ -1,15 +1,14 @@
-# qualijs
+# Steps:
+```
 
-To install dependencies:
+# Setup
 
-```bash
 bun install
+cd frontend
+bun install
+
+# Download Piper from https://github.com/rhasspy/piper/releases/tag/2023.11.14-2 and set the environment variable.
+
+# Download whisper from pip.
+
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.24. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
