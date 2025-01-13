@@ -179,3 +179,4 @@ dist
 
 ./backend/piper/en_US-amy-low.onnx
 ./backend/piper/en_US-amy-low.onnx.json
+./backend/database/prod.sqlite
