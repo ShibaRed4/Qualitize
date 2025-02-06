@@ -1,0 +1,270 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "can,for,hey,me,page,read,this,you": {
+            "intent": "action.readPage",
+            "domain": "default"
+          },
+          "can,read,text,this,you": {
+            "intent": "action.readPage",
+            "domain": "default"
+          },
+          "page,read,this": {
+            "intent": "action.readPage",
+            "domain": "default"
+          },
+          "can,help,me,read,this,you": {
+            "intent": "action.readPage",
+            "domain": "default"
+          },
+          "pleas,read,this": {
+            "intent": "action.readPage",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "action.readPage": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Hey, can you read this page for me?",
+            "intent": "action.readPage"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you read this text?",
+            "intent": "action.readPage"
+          },
+          {
+            "domain": "default",
+            "utterance": "Read this page.",
+            "intent": "action.readPage"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you help me read this?",
+            "intent": "action.readPage"
+          },
+          {
+            "domain": "default",
+            "utterance": "Please read this.",
+            "intent": "action.readPage"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hey": 1,
+              "can": 1,
+              "you": 1,
+              "read": 1,
+              "this": 1,
+              "page": 1,
+              "for": 1,
+              "me": 1,
+              "text": 1,
+              "help": 1,
+              "pleas": 1
+            },
+            "intents": {
+              "action.readPage": 1
+            },
+            "intentFeatures": {
+              "action.readPage": {
+                "hey": 1,
+                "can": 1,
+                "you": 1,
+                "read": 1,
+                "this": 1,
+                "page": 1,
+                "for": 1,
+                "me": 1,
+                "text": 1,
+                "help": 1,
+                "pleas": 1
+              }
+            },
+            "featuresToIntent": {
+              "hey": [
+                "action.readPage"
+              ],
+              "can": [
+                "action.readPage"
+              ],
+              "you": [
+                "action.readPage"
+              ],
+              "read": [
+                "action.readPage"
+              ],
+              "this": [
+                "action.readPage"
+              ],
+              "page": [
+                "action.readPage"
+              ],
+              "for": [
+                "action.readPage"
+              ],
+              "me": [
+                "action.readPage"
+              ],
+              "text": [
+                "action.readPage"
+              ],
+              "help": [
+                "action.readPage"
+              ],
+              "pleas": [
+                "action.readPage"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hey",
+                "can",
+                "you",
+                "read",
+                "this",
+                "page",
+                "for",
+                "me",
+                "text",
+                "help",
+                "pleas"
+              ],
+              "intents": [
+                "action.readPage"
+              ],
+              "perceptrons": [
+                [
+                  -0.5760268568992615,
+                  0.6582380533218384,
+                  0.6582380533218384,
+                  4.957175254821777,
+                  4.957175254821777,
+                  1.7988711595535278,
+                  -0.5760268568992615,
+                  -0.034580375999212265,
+                  0.7037615180015564,
+                  0.5408440828323364,
+                  1.915103554725647,
+                  2.4794705187352513
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Hey, can you read this page for me?"
+      ],
+      [
+        "en",
+        "Can you read this text?"
+      ],
+      [
+        "en",
+        "Read this page."
+      ],
+      [
+        "en",
+        "Can you help me read this?"
+      ],
+      [
+        "en",
+        "Please read this."
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "action.readPage": [
+          {
+            "answer": "Sure! Please provide the page or text you want me to read."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

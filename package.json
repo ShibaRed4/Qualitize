@@ -5,9 +5,11 @@
     "express": "^4.21.2",
     "express-ws": "^5.0.2",
     "jsonwebtoken": "^9.0.2",
+    "node-nlp": "^5.0.0-alpha.4",
     "ollama": "^0.5.11",
     "sequelize": "^6.37.5",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "tesseract.js": "^6.0.0"
   },
   "name": "qualijs",
   "module": "index.ts",
